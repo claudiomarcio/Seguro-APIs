@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Seguro.Hexagonal.Api.Controllers;
-using Seguro.Hexagonal.Domain.Commands;
+using Seguro.Hexagonal.Application.Commands;
 using Seguro.Hexagonal.Domain.Enums;
 using Seguro.Hexagonal.Domain.Exceptions;
 using Seguro.Hexagonal.Proposta.Api.Models;
-using Seguro.Hexagonal.Proposta.Domain.Interfaces.Usecases;
+using Seguro.Hexagonal.Proposta.Application.Interfaces;
 
 namespace Seguro.Hexagonal.Proposta.Api.Tests;
 

@@ -1,6 +1,6 @@
 ﻿using Moq;
+using Seguro.Hexagonal.Application.Commands;
 using Seguro.Hexagonal.Application.UseCases;
-using Seguro.Hexagonal.Domain.Commands;
 using Seguro.Hexagonal.Domain.Enums;
 using Seguro.Hexagonal.Proposta.Domain.Interfaces.Repositories;
 

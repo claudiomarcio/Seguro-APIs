@@ -1,8 +1,8 @@
-﻿using Seguro.Hexagonal.Domain.Commands;
+﻿using Seguro.Hexagonal.Application.Commands;
 using Seguro.Hexagonal.Domain.Enums;
 using Seguro.Hexagonal.Domain.Exceptions;
+using Seguro.Hexagonal.Proposta.Application.Interfaces;
 using Seguro.Hexagonal.Proposta.Domain.Interfaces.Repositories;
-using Seguro.Hexagonal.Proposta.Domain.Interfaces.Usecases;
 
 namespace Seguro.Hexagonal.Application.UseCases;
 

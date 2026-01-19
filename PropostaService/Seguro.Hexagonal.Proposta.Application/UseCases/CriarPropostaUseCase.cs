@@ -1,6 +1,6 @@
-﻿using Seguro.Hexagonal.Domain.Commands;
+﻿using Seguro.Hexagonal.Application.Commands;
+using Seguro.Hexagonal.Proposta.Application.Interfaces;
 using Seguro.Hexagonal.Proposta.Domain.Interfaces.Repositories;
-using Seguro.Hexagonal.Proposta.Domain.Interfaces.Usecases;
 using PropostaEntities = Seguro.Hexagonal.Proposta.Domain.Entities.Proposta;
 
 namespace Seguro.Hexagonal.Application.UseCases;

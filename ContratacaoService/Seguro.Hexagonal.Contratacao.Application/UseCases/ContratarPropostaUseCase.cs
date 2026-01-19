@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
-using Seguro.Hexagonal.Contratacao.Domain.Commands;
+using Seguro.Hexagonal.Contratacao.Application.Commands;
+using Seguro.Hexagonal.Contratacao.Application.Interfaces;
 using Seguro.Hexagonal.Contratacao.Domain.Enums;
 using Seguro.Hexagonal.Contratacao.Domain.Exceptions;
 using Seguro.Hexagonal.Contratacao.Domain.Interfaces.Repositories;
 using Seguro.Hexagonal.Contratacao.Domain.Interfaces.Services;
-using Seguro.Hexagonal.Contratacao.Domain.Interfaces.UseCases;
 using Seguro.Hexagonal.Contratacao.Domain.ValueObjects;
 
 namespace Seguro.Hexagonal.Contratacao.Application.UseCases;

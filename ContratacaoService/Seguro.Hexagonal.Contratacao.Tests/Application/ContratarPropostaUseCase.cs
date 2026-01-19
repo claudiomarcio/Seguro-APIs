@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Moq;
+using Seguro.Hexagonal.Contratacao.Application.Commands;
 using Seguro.Hexagonal.Contratacao.Application.UseCases;
-using Seguro.Hexagonal.Contratacao.Domain.Commands;
 using Seguro.Hexagonal.Contratacao.Domain.Enums;
 using Seguro.Hexagonal.Contratacao.Domain.Exceptions;
 using Seguro.Hexagonal.Contratacao.Domain.Interfaces.Repositories;

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Seguro.Hexagonal.Contratacao.Application.Interfaces;
 using Seguro.Hexagonal.Contratacao.Application.UseCases;
 using Seguro.Hexagonal.Contratacao.Data.Context;
 using Seguro.Hexagonal.Contratacao.Data.HttpClients;
@@ -8,7 +9,6 @@ using Seguro.Hexagonal.Contratacao.Data.Repositories;
 using Seguro.Hexagonal.Contratacao.Data.Secutiry;
 using Seguro.Hexagonal.Contratacao.Domain.Interfaces.Repositories;
 using Seguro.Hexagonal.Contratacao.Domain.Interfaces.Services;
-using Seguro.Hexagonal.Contratacao.Domain.Interfaces.UseCases;
 using Seguro.Hexagonal.Contratacao.IoC.Resilience;
 using Seguro.Hexagonal.Contratacao.IoC.Security;
 

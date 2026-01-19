@@ -4,8 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Seguro.Hexagonal.Application.UseCases;
 using Seguro.Hexagonal.Data.Context;
 using Seguro.Hexagonal.Data.Repositories;
+using Seguro.Hexagonal.Proposta.Application.Interfaces;
 using Seguro.Hexagonal.Proposta.Domain.Interfaces.Repositories;
-using Seguro.Hexagonal.Proposta.Domain.Interfaces.Usecases;
 
 namespace Seguro.Hexagonal.Proposta.IoC;
 

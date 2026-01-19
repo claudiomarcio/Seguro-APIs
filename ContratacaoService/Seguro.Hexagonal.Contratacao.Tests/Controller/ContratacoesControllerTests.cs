@@ -2,8 +2,8 @@
 using Moq;
 using Seguro.Hexagonal.Contratacao.Api.Controllers;
 using Seguro.Hexagonal.Contratacao.Api.Models;
-using Seguro.Hexagonal.Contratacao.Domain.Commands;
-using Seguro.Hexagonal.Contratacao.Domain.Interfaces.UseCases;
+using Seguro.Hexagonal.Contratacao.Application.Commands;
+using Seguro.Hexagonal.Contratacao.Application.Interfaces;
 using Seguro.Hexagonal.Contratacao.Domain.ValueObjects;
 
 namespace Seguro.Hexagonal.Contratacao.Api.Tests;

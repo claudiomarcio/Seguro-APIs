@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Seguro.Hexagonal.Contratacao.Api.Models;
-using Seguro.Hexagonal.Contratacao.Domain.Commands;
-using Seguro.Hexagonal.Contratacao.Domain.Interfaces.UseCases;
+using Seguro.Hexagonal.Contratacao.Application.Commands;
+using Seguro.Hexagonal.Contratacao.Application.Interfaces;
 
 namespace Seguro.Hexagonal.Contratacao.Api.Controllers;
 

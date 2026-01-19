@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Seguro.Hexagonal.Domain.Commands;
+using Seguro.Hexagonal.Application.Commands;
 using Seguro.Hexagonal.Domain.Enums;
 using Seguro.Hexagonal.Proposta.Api.Models;
-using Seguro.Hexagonal.Proposta.Domain.Interfaces.Usecases;
+using Seguro.Hexagonal.Proposta.Application.Interfaces;
 
 namespace Seguro.Hexagonal.Api.Controllers;
 
