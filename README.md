@@ -3,7 +3,7 @@
 Este projeto foi desenvolvido como parte de um teste técnico, com o objetivo de demonstrar
 a aplicação de boas práticas em um cenário realista:
 
-	Arquitetura Hexagonal (Ports & Adapters)
+	Arquitetura Hexagonal (Interfaces & Adapters)
 
 	Princípios de DDD (Domain-Driven Design)
 
