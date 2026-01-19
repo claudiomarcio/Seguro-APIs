@@ -1,0 +1,60 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: seguro-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Senha@12345"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+  proposta-api:
+    build:
+      context: .
+      dockerfile: PropostaService/Seguro.Hexagonal.Proposta.Api/Dockerfile
+    container_name: proposta-api
+    ports:
+      - "5001:8080"
+    restart: unless-stopped
+    depends_on:
+      - sqlserver
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=PropostaDb;User Id=sa;Password=Senha@12345;TrustServerCertificate=True"
+      Jwt__Key: "U2VndXJvSGV4YWdvbmFsSldUU2VjcmV0S2V5MTIzNDU2"
+      Jwt__Issuer: "Seguro.Hexagonal"
+      Jwt__Audience: "Seguro.Hexagonal.Clients"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+  contratacao-api:
+    build:
+      context: .
+      dockerfile: ContratacaoService/Seguro.Hexagonal.Contratacao.Api/Dockerfile
+    container_name: contratacao-api
+    ports:
+      - "5002:8080"
+    restart: unless-stopped
+    depends_on:
+      - sqlserver
+      - proposta-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__ContratacaoConnection: "Server=sqlserver;Database=ContratacaoDb;User Id=sa;Password=Senha@12345;TrustServerCertificate=True"
+      Services__PropostaService: "http://proposta-api:8080"
+      Jwt__Key: "U2VndXJvSGV4YWdvbmFsSldUU2VjcmV0S2V5MTIzNDU2"
+      Jwt__Issuer: "Seguro.Hexagonal"
+      Jwt__Audience: "Seguro.Hexagonal.Clients"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+volumes:
+  sql_data:

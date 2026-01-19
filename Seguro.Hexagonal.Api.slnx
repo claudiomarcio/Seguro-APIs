@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/ContratacaoService/">
+    <Project Path="ContratacaoService/Seguro.Hexagonal.Contratacao.Api/Seguro.Hexagonal.Contratacao.Api.csproj" />
+    <Project Path="ContratacaoService/Seguro.Hexagonal.Contratacao.Application/Seguro.Hexagonal.Contratacao.Application.csproj" />
+    <Project Path="ContratacaoService/Seguro.Hexagonal.Contratacao.Data/Seguro.Hexagonal.Contratacao.Data.csproj" />
+    <Project Path="ContratacaoService/Seguro.Hexagonal.Contratacao.Domain/Seguro.Hexagonal.Contratacao.Domain.csproj" />
+    <Project Path="ContratacaoService/Seguro.Hexagonal.Contratacao.IoC/Seguro.Hexagonal.Contratacao.IoC.csproj" />
+    <Project Path="ContratacaoService/Seguro.Hexagonal.Contratacao.Tests/Seguro.Hexagonal.Contratacao.Tests.csproj" />
+  </Folder>
+  <Folder Name="/PropostaService/">
+    <Project Path="PropostaService/Seguro.Hexagonal.Proposta.Api/Seguro.Hexagonal.Proposta.Api.csproj" />
+    <Project Path="PropostaService/Seguro.Hexagonal.Proposta.Application/Seguro.Hexagonal.Proposta.Application.csproj" />
+    <Project Path="PropostaService/Seguro.Hexagonal.Proposta.Data/Seguro.Hexagonal.Proposta.Data.csproj" />
+    <Project Path="PropostaService/Seguro.Hexagonal.Proposta.Domain/Seguro.Hexagonal.Proposta.Domain.csproj" />
+    <Project Path="PropostaService/Seguro.Hexagonal.Proposta.IoC/Seguro.Hexagonal.Proposta.IoC.csproj" />
+    <Project Path="PropostaService/Seguro.Hexagonal.Proposta.Tests/Seguro.Hexagonal.Proposta.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+</Solution>
